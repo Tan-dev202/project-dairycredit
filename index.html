@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DairyCredit - Farmer Credit Scoring</title>
+  </head>
+  <body>
+    <header id="header">
+      <div><h1>DairyCredit</h1></div>
+      <div><button id="dark-mode-toggle">🌙</button></div>
+    </header>
+    <section id="farmer-input">
+      <h2>Add/Edit Farmer Data</h2>
+      <form id="farmer-form">
+        <input type="hidden" id="farmer-id" />
+        <input type="text" id="name" placeholder="Name" required />
+        <input type="text" id="location" placeholder="Location" required />
+        <input
+          type="number"
+          id="monthly-sales"
+          placeholder="Monthly Sales"
+          required
+        />
+        <input
+          type="number"
+          id="monthly-costs"
+          placeholder="Monthly Costs"
+          required
+        />
+        <input
+          type="number"
+          id="asset-value"
+          placeholder="Farm Asset Value"
+          required
+        />
+        <input
+          type="number"
+          id="current-liabilities"
+          placeholder="Current Liabilities"
+          required
+        />
+        <button type="submit" id="submit-btn">Add Farmer</button>
+        <button type="button" id="cancel-edit-btn" class="hidden">
+          Cancel Edit
+        </button>
+      </form>
+    </section>
+    <section>
+      <h2>Search</h2>
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Search by name or location"
+      />
+    </section>
+    <section id="farmers-table-section">
+      <h2>Credit Scores</h2>
+      <table id="farmers-table" class="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Location</th>
+            <th>Monthly Sales</th>
+            <th>Monthly Costs</th>
+            <th>Cost/Sales Ratio</th>
+            <th>Liabilities/Assets Ratio</th>
+            <th>Average Ratio</th>
+            <th>Credit Score</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="farmers-tbody"></tbody>
+      </table>
+    </section>
+    <section id="top-performers" class="top-performers">
+      <h2>Top Performers</h2>
+      <div id="top-performers-list"></div>
+    </section>
+  </body>
+</html>
