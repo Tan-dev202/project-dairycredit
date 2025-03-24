@@ -19,9 +19,9 @@ DairyCredit is a web application that helps assess credit scores for dairy farme
   * Average Ratio 70+: Low Score (100 - Average Ratio)
 
 ## Functionalities
-- Add new farmer records
-- Search farmers by name or location
-- Toggle dark/light mode
-- Real-time credit score calculation
-- View best performers
-- Access basic financial literacy content
+- [] Add new farmer records
+- [] Search farmers by name or location
+- [] Toggle dark/light mode
+- [] Real-time credit score calculation
+- [] View best performers
+- [] Access basic financial literacy content
