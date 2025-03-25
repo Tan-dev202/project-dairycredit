@@ -21,9 +21,9 @@ DairyCredit is a web application that helps assess credit scores for dairy farme
 - Average Ratio: 
   >(Cost-to-Sales Ratio + Liabilities-to-Assets Ratio) / 2
 - Credit Score Grading:
-  > Average Ratio < 49: High Score (100 - Average Ratio)
-  > Average Ratio 50-69: Medium Score (100 - Average Ratio)
-  > Average Ratio 70+: Low Score (100 - Average Ratio)
+  + Average Ratio < 49: High Score (100 - Average Ratio)
+  + Average Ratio 50-69: Medium Score (100 - Average Ratio)
+  + Average Ratio 70+: >Low Score (100 - Average Ratio)
 
 <ins>**Functionalities**
 
