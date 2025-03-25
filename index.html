@@ -4,60 +4,121 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DairyCredit - Farmer Credit Scoring</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header id="header">
-      <div><h1>DairyCredit</h1></div>
-      <div><button id="dark-mode-toggle">🌙</button></div>
+      <nav class="bg-success navbar sticky-top navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white fw-bold" href="#"><img src="./assets/dairy cow.ico" alt="logo" class="logo">DairyCredit</a>
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarCollapse"
+          >
+            <div class="navbar-nav">
+              <a href="#Farmer Data" class="nav-item nav-link fw-bold"
+                >Add or Edit Farmers</a
+              >
+              <a href="#Credit Scores" class="nav-item nav-link fw-bold"
+                >Credit Scores</a
+              >
+              <a href="#Top Performers" class="nav-item nav-link fw-bold"
+                >Top Performers</a
+              >
+              <div class="ms-auto">
+                <button id="dark-mode-toggle" class="btn btn-outline-light rounded-circle">
+                  🌙
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
     <section id="farmer-input">
-      <h2>Add/Edit Farmer Data</h2>
-      <form id="farmer-form">
-        <input type="hidden" id="farmer-id" />
-        <input type="text" id="name" placeholder="Name" required />
-        <input type="text" id="location" placeholder="Location" required />
-        <input
-          type="number"
-          id="monthly-sales"
-          placeholder="Monthly Sales"
-          required
-        />
-        <input
-          type="number"
-          id="monthly-costs"
-          placeholder="Monthly Costs"
-          required
-        />
-        <input
-          type="number"
-          id="asset-value"
-          placeholder="Farm Asset Value"
-          required
-        />
-        <input
-          type="number"
-          id="current-liabilities"
-          placeholder="Current Liabilities"
-          required
-        />
-        <button type="submit" id="submit-btn">Add Farmer</button>
-        <button type="button" id="cancel-edit-btn" class="hidden">
-          Cancel Edit
-        </button>
-      </form>
+      <div class="container form-group my-5 justify-content-center">
+        <h2>Farmers Data</h2>
+        <form id="farmer-form" class="col-7">
+          <input type="hidden" id="farmer-id" class="form-control m-2" />
+          <input
+            type="text"
+            id="name"
+            class="form-control m-2"
+            placeholder="Name"
+            required
+          />
+          <input
+            type="text"
+            id="location"
+            class="form-control m-2"
+            placeholder="Location"
+            required
+          />
+          <input
+            type="number"
+            id="monthly-sales"
+            class="form-control m-2"
+            placeholder="Monthly Sales"
+            required
+          />
+          <input
+            type="number"
+            id="monthly-costs"
+            class="form-control m-2"
+            placeholder="Monthly Costs"
+            required
+          />
+          <input
+            type="number"
+            id="asset-value"
+            class="form-control m-2"
+            placeholder="Farm Asset Value"
+            required
+          />
+          <input
+            type="number"
+            id="current-liabilities"
+            class="form-control m-2"
+            placeholder="Current Liabilities"
+            required
+          />
+          <button type="submit" id="submit-btn" class="btn bg-success btn-light text-white rounded-pill">Add Farmer</button>
+          <button type="button" id="cancel-edit-btn" class="hidden btn bg-success btn-light text-white rounded-pill">
+            Cancel Edit
+          </button>
+        </form>
+      </div>
     </section>
     <section>
-      <h2>Search</h2>
-      <input
-        type="text"
-        id="search-input"
-        placeholder="Search by name or location"
-      />
+      <div class="container">
+        <div class="row justify-content-left">
+          <div class="col-md-5">
+            <div class="search-container my-5">
+              <input
+                type="search"
+                class="form-control search-input m-2"
+                placeholder="Search by name or location"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="farmers-table-section">
-      <h2>Credit Scores</h2>
-      <table id="farmers-table" class="table">
+      <div class="container">
+        <table id="farmers-table" class="table">
+        <h2>Credit Scores</h2>
         <thead>
           <tr>
             <th>Name</th>
@@ -73,11 +134,16 @@
         </thead>
         <tbody id="farmers-tbody"></tbody>
       </table>
+    </div>
     </section>
     <section id="top-performers" class="top-performers">
-      <h2>Top Performers</h2>
-      <div id="top-performers-list"></div>
+      <div class="container">
+        <h2>Top Performers</h2>
+        <div id="top-performers-list"></div>
+      </div>
     </section>
+    <footer class="footer">&copy 2025 DairyCredit | All rights reserved</footer>
     <script src="./src/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
