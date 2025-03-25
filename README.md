@@ -1,6 +1,7 @@
 # DairyCredit: Alternative Credit Scoring Platform for Dairy Farmers
 
 <ins>**Project Overview**
+
 DairyCredit is a web application that helps assess credit scores for dairy farmers based on their financial data. It addresses credit risk assessment challenge due to the lack of farmer credit history and collateral. By developing an alternative credit scoring system lenders will assess the credit score of dairy farmers using non-traditional data points.
 
 <ins>**Features or MVPs**
