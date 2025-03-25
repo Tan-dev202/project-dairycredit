@@ -1,0 +1,76 @@
+{
+    "farmers": [
+        {
+            "id": 1,
+            "name": "Frank",
+            "location": "Kiambu",
+            "monthlySales": 50000,
+            "monthlyCosts": 23000,
+            "farmAssetValue": 150000,
+            "currentLiabilities": 45000
+        },
+        {
+            "id": 2,
+            "name": "Andrew",
+            "location": "Nyeri",
+            "monthlySales": 30000,
+            "monthlyCosts": 17500,
+            "farmAssetValue": 85000,
+            "currentLiabilities": 40000
+        },
+        {
+            "id": 3,
+            "name": "Alice",
+            "location": "Thika",
+            "monthlySales": 130000,
+            "monthlyCosts": 79000,
+            "farmAssetValue": 350000,
+            "currentLiabilities": 200000
+        },
+        {
+            "id": 4,
+            "name": "Peter",
+            "location": "Limuru",
+            "monthlySales": 140000,
+            "monthlyCosts": 95000,
+            "farmAssetValue": 300000,
+            "currentLiabilities": 230000
+        },
+        {
+            "id": 5,
+            "name": "David",
+            "location": "Kiambu",
+            "monthlySales": 55000,
+            "monthlyCosts": 45000,
+            "farmAssetValue": 80000,
+            "currentLiabilities": 56000
+        },
+        {
+            "id": 6,
+            "name": "James",
+            "location": "Limuru",
+            "monthlySales": 100000,
+            "monthlyCosts": 75500,
+            "farmAssetValue": 250000,
+            "currentLiabilities": 175000
+        },
+        {
+            "id": 7,
+            "name": "Diane",
+            "location": "Kiambu",
+            "monthlySales": 70000,
+            "monthlyCosts": 49000,
+            "farmAssetValue": 85000,
+            "currentLiabilities": 70000
+        },
+        {
+            "id": 8,
+            "name": "Susan",
+            "location": "Nyeri",
+            "monthlySales": 57000,
+            "monthlyCosts": 35000,
+            "farmAssetValue": 95000,
+            "currentLiabilities": 50000
+        }
+    ]
+}
