@@ -1,1 +1,44 @@
-@import url("./bootstrap.css")
+@import url("./bootstrap.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;500;600;700;900&display=swap");
+
+:root {
+  --font-heading: "Montserrat", sans-serif;
+  --font-normal: "Poppins", sans-serif;
+}
+
+body,
+html {
+  height: auto;
+  scroll-behavior: smooth;
+  background-color: beige;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: var(--font-normal);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+  }
+
+.logo {
+    width: 60px;
+    height: 60px;
+  }
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
