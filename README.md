@@ -27,9 +27,9 @@ DairyCredit is a web application that helps assess credit scores for dairy farme
 
 <ins>**Functionalities**
 
-- [ ] Add new farmer records
-- [ ] Search farmers by name or location
-- [ ] Toggle dark/light mode
-- [ ] Real-time credit score calculation
-- [ ] View best performers
+- [x] Add new farmer records
+- [x] Search farmers by name or location
+- [x] Toggle dark/light mode
+- [x] Real-time credit score calculation
+- [x] View best performers
 - [ ] Access basic financial literacy content
