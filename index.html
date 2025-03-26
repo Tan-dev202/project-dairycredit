@@ -4,13 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DairyCredit - Farmer Credit Scoring</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header id="header">
       <nav class="bg-success navbar sticky-top navbar-expand-lg navbar-light">
         <div class="container-fluid">
-          <a class="navbar-brand text-white fw-bold" href="#"><img src="./assets/dairy cow.ico" alt="logo" class="logo">DairyCredit</a>
+          <a class="navbar-brand text-white fw-bold" href="#"
+            ><img src="./assets/dairy cow.ico" alt="logo" class="logo" />
+            DairyCredit</a
+          >
           <button
             type="button"
             class="navbar-toggler"
@@ -27,7 +34,7 @@
             id="navbarCollapse"
           >
             <div class="navbar-nav">
-              <a href="#Farmer Data" class="nav-item nav-link fw-bold"
+              <a href="#Farmers Data" class="nav-item nav-link fw-bold"
                 >Add or Edit Farmers</a
               >
               <a href="#Credit Scores" class="nav-item nav-link fw-bold"
@@ -37,7 +44,10 @@
                 >Top Performers</a
               >
               <div class="ms-auto">
-                <button id="dark-mode-toggle" class="btn btn-outline-light rounded-circle">
+                <button
+                  id="dark-mode-toggle"
+                  class="btn btn-outline-light rounded-circle"
+                >
                   🌙
                 </button>
               </div>
@@ -48,7 +58,7 @@
     </header>
     <section id="farmer-input">
       <div class="container form-group my-5 justify-content-center">
-        <h2>Farmers Data</h2>
+        <h4 id="Farmers Data">Farmers Data</h4>
         <form id="farmer-form" class="col-7">
           <input type="hidden" id="farmer-id" class="form-control m-2" />
           <input
@@ -93,8 +103,18 @@
             placeholder="Current Liabilities"
             required
           />
-          <button type="submit" id="submit-btn" class="btn bg-success btn-light text-white rounded-pill">Add Farmer</button>
-          <button type="button" id="cancel-edit-btn" class="hidden btn bg-success btn-light text-white rounded-pill">
+          <button
+            type="submit"
+            id="submit-btn"
+            class="btn bg-success btn-light text-white rounded-pill"
+          >
+            Add Farmer
+          </button>
+          <button
+            type="button"
+            id="cancel-edit-btn"
+            class="hidden btn bg-success btn-light text-white rounded-pill"
+          >
             Cancel Edit
           </button>
         </form>
@@ -117,29 +137,29 @@
     </section>
     <section id="farmers-table-section">
       <div class="container">
-        <table id="farmers-table" class="table">
-        <h2>Credit Scores</h2>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Location</th>
-            <th>Monthly Sales</th>
-            <th>Monthly Costs</th>
-            <th>Cost/Sales Ratio</th>
-            <th>Liabilities/Assets Ratio</th>
-            <th>Average Ratio</th>
-            <th>Credit Score</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
-        <tbody id="farmers-tbody"></tbody>
-      </table>
-    </div>
+        <table id="farmers-table" class="table bg-light">
+          <h4 id="Credit Scores">Credit Scores</h4>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Location</th>
+              <th>Monthly Sales</th>
+              <th>Monthly Costs</th>
+              <th>Cost/Sales Ratio</th>
+              <th>Liabilities/Assets Ratio</th>
+              <th>Average Ratio</th>
+              <th>Credit Score</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="farmers-tbody"></tbody>
+        </table>
+      </div>
     </section>
-    <section id="top-performers" class="top-performers">
+    <section id="top-performers" class="top-performers my-5">
       <div class="container">
-        <h2>Top Performers</h2>
-        <div id="top-performers-list"></div>
+        <h4 id="Top Performers">Top Performers</h4>
+        <div id="top-performers-list" class="top"></div>
       </div>
     </section>
     <footer class="footer">&copy 2025 DairyCredit | All rights reserved</footer>
