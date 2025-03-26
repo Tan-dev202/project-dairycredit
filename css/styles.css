@@ -9,36 +9,49 @@
 
 body,
 html {
+  margin: auto;
   height: auto;
+  width: 100%;
   scroll-behavior: smooth;
   background-color: beige;
 }
 
 * {
-    box-sizing: border-box;
-    font-family: var(--font-normal);
-  }
+  box-sizing: border-box;
+  font-family: var(--font-normal);
+}
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: var(--font-heading);
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  text-align: left;
+}
 
 .logo {
-    width: 60px;
-    height: 60px;
-  }
+  width: 60px;
+  height: 60px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.top { 
+    display: flex; 
+    justify-content: space-between;
+}
 
 .footer {
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 20px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
