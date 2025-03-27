@@ -29,6 +29,7 @@ h5,
 h6 {
   font-family: var(--font-heading);
   text-align: left;
+  margin-bottom: 25px;
 }
 
 .logo {
@@ -54,4 +55,5 @@ h6 {
   color: white;
   text-align: center;
   padding: 20px;
+  font-size: small;
 }
