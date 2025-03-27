@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <td hidden>${farmer.farmAssetValue}</td>
             <td hidden>${farmer.currentLiabilities}</td>
             <td>
-                <button class="delete-btn btn btn-sm btn-danger rounded">Delete</button>
+                <button class="delete-btn btn btn-sm btn-success rounded">❌</button>
             </td>
         `;
 
