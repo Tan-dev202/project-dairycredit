@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function searchFarmers(event) {
     const searchTerm = event.target.value.toLowerCase();
-    fetch("http://localhost:3000/farmers", {
+    fetch("https://my-json-server.typicode.com/Tan-dev202/project-dairycredit/farmers", {
       method: "GET",
       headers: {
         Accept: "application/json",
@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   async function fetchFarmers() {
     try {
-      const response = await fetch("http://localhost:3000/farmers", {
+      const response = await fetch("https://my-json-server.typicode.com/Tan-dev202/project-dairycredit/farmers", {
         method: "GET",
         headers: {
           Accept: "application/json",
@@ -148,7 +148,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const farmerId = row.dataset.id;
 
     try {
-      await fetch(`http://localhost:3000/farmers/${farmerId}`, {
+      await fetch(`https://my-json-server.typicode.com/Tan-dev202/project-dairycredit/farmers/${farmerId}`, {
         method: "DELETE",
       });
       fetchFarmers();
@@ -173,7 +173,7 @@ document.addEventListener("DOMContentLoaded", () => {
     try {
       let response;
       if (farmerId) {
-        response = await fetch(`http://localhost:3000/farmers/${farmerId}`, {
+        response = await fetch(`https://my-json-server.typicode.com/Tan-dev202/project-dairycredit/farmers/${farmerId}`, {
           method: "PATCH",
           headers: {
             "Content-Type": "application/json",
@@ -181,7 +181,7 @@ document.addEventListener("DOMContentLoaded", () => {
           body: JSON.stringify(newFarmer),
         });
       } else {
-        response = await fetch("http://localhost:3000/farmers", {
+        response = await fetch("https://my-json-server.typicode.com/Tan-dev202/project-dairycredit/farmers", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
