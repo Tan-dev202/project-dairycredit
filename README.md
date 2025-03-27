@@ -32,4 +32,4 @@ DairyCredit is a web application that helps assess credit scores for dairy farme
 - [x] Toggle dark/light mode
 - [x] Real-time credit score calculation
 - [x] View best performers
-- [ ] Access basic financial literacy content
+- [x] Access basic financial literacy content
