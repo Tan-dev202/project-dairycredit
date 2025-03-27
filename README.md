@@ -1,5 +1,7 @@
 # DairyCredit: Alternative Credit Scoring Platform for Dairy Farmers
 
+# Author: Enock Tangus
+
 <ins>**Project Overview**
 
 DairyCredit is a web application that helps assess credit scores for dairy farmers based on their financial data. It addresses credit risk assessment challenge due to the lack of farmer credit history and collateral. By developing an alternative credit scoring system lenders will assess the credit score of dairy farmers using non-traditional data points.
@@ -33,3 +35,5 @@ DairyCredit is a web application that helps assess credit scores for dairy farme
 - [x] Real-time credit score calculation
 - [x] View best performers
 - [x] Access basic financial literacy content
+
+[GitHub Pages](https://tan-dev202.github.io/project-dairycredit/)
