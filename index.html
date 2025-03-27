@@ -4,9 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DairyCredit - Farmer Credit Scoring</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon_io/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon_io/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon_io/favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon_io/favicon-16x16.png"
+    />
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -34,19 +48,28 @@
             id="navbarCollapse"
           >
             <div class="navbar-nav">
-              <a href="#Farmers Data" class="nav-item nav-link fw-bold"
-                >Add or Edit Farmers</a
+              <a
+                href="#Farmers Data"
+                class="nav-item nav-link fw-bold text-white"
+                >Farmer Details</a
               >
-              <a href="#Credit Scores" class="nav-item nav-link fw-bold"
+              <a
+                href="#Credit Scores"
+                class="nav-item nav-link fw-bold text-white"
                 >Credit Scores</a
               >
-              <a href="#Top Performers" class="nav-item nav-link fw-bold"
+              <a
+                href="#Top Performers"
+                class="nav-item nav-link fw-bold text-white"
                 >Top Performers</a
+              >
+              <a href="#faqs" class="nav-item nav-link fw-bold text-white"
+                >FAQs</a
               >
               <div class="ms-auto">
                 <button
                   id="dark-mode-toggle"
-                  class="btn btn-outline-light rounded-circle"
+                  class="btn btn-outline-none rounded-circle"
                 >
                   🌙
                 </button>
@@ -56,10 +79,13 @@
         </div>
       </nav>
     </header>
-    <section id="farmer-input">
-      <div class="container form-group my-5 justify-content-center">
-        <h4 id="Farmers Data">Farmers Data</h4>
-        <form id="farmer-form" class="col-7">
+
+    <img src="assets/banner.jpg" class="img-fluid" width="100%" alt="banner" />
+
+    <section id="farmer-input" class="container d-flex justify-content-between">
+      <div class=" details form-group my-5 justify-content-center">
+        <h4 id="Farmers Data">Farmer Details</h4>
+        <form id="farmer-form">
           <input type="hidden" id="farmer-id" class="form-control m-2" />
           <input
             type="text"
@@ -108,17 +134,18 @@
             id="submit-btn"
             class="btn bg-success btn-light text-white rounded-pill"
           >
-            Add Farmer
+            Add/Edit
           </button>
           <button
             type="button"
             id="cancel-edit-btn"
             class="hidden btn bg-success btn-light text-white rounded-pill"
           >
-            Cancel Edit
+            Cancel
           </button>
         </form>
       </div>
+      <img src="assets/farming-in-kenya-logo.png" alt="farming in kenya logo" />
     </section>
     <section>
       <div class="container">
@@ -135,8 +162,8 @@
         </div>
       </div>
     </section>
-    <section id="farmers-table-section">
-      <div class="container">
+    <section class="container" id="farmers-table-section">
+      <div>
         <table id="farmers-table" class="table bg-light">
           <h4 id="Credit Scores">Credit Scores</h4>
           <thead>
@@ -160,6 +187,140 @@
       <div class="container">
         <h4 id="Top Performers">Top Performers</h4>
         <div id="top-performers-list" class="top"></div>
+      </div>
+    </section>
+    <section>
+      <div class="container d-flex justify-content-between">
+        <img
+          src="assets/cow-pose.jpg"
+          width="500"
+          height="400"
+          alt="dairy-cow"
+          class="rounded"
+        />
+        <img
+          src="assets/dairygoat.jpg"
+          alt="dairy-goat"
+          width="500"
+          height="400"
+          class="rounded"
+        />
+      </div>
+    </section>
+    <section class="container my-5" id="faqs">
+      <h4>Frequently Asked Questions (FAQs)</h4>
+      <div class="accordion">
+        <div class="accordion-item">
+          <h6 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseOne"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseOne"
+            >
+              How will lenders interact with the DairyCredit App?
+            </button>
+          </h6>
+          <div
+            id="panelsStayOpen-collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="panelsStayOpen-headingOne"
+          >
+            <div class="accordion-body bg-success text-white">
+              The DairyCredit App helps lenders assess the creditworthiness of
+              dairy farmers by evaluating their farm records. It tackles the
+              challenge of credit risk assessment, which is often hindered by
+              the absence of credit history and collateral. By utilizing an
+              alternative credit scoring system, the app enables lenders to
+              assess farmers' credit scores using non-traditional data points.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h6 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwo"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwo"
+            >
+              How does DairyCredit calculate the credit scores?
+            </button>
+          </h6>
+          <div
+            id="panelsStayOpen-collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingTwo"
+          >
+            <div class="accordion-body bg-success text-white">
+              The app takes the farmer’s cost-to-sales and liabilities-to-assets
+              ratios and uses the average value to estimate the credit scores.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h6 class="accordion-header" id="panelsStayOpen-headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseThree"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseThree"
+            >
+              What is the first step to achieve increased dairy production?
+            </button>
+          </h6>
+          <div
+            id="panelsStayOpen-collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingThree"
+          >
+            <div class="accordion-body bg-success text-white">
+              The farmers need to develop necessary skills for managing finances
+              and dairy farming. Proper prioritizing and avoiding to buy
+              materials without a plan are the key steps of managing dairy
+              animals.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h6 class="accordion-header" id="panelsStayOpen-headingFour">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseFour"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseFour"
+            >
+              What are the eligibility requirements for dairy financing?
+            </button>
+          </h6>
+          <div
+            id="panelsStayOpen-collapseFour"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingFour"
+          >
+            <div class="accordion-body bg-success text-white">
+              <ul>
+                Individual borrowers should have experience in dairy farming
+                which should be an economically viable activity in their region.
+              </ul>
+              <ul>
+                They should also have space/accommodation for the farm animals.
+              </ul>
+              <ul>
+                The applicants should have arrangements for growing or storage
+                of feeds, concentrates and fodder.
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <footer class="footer">&copy 2025 DairyCredit | All rights reserved</footer>
